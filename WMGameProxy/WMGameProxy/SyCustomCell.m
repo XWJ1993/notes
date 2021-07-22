@@ -9,7 +9,7 @@
 #import "SyCustomCell.h"
 
 @interface SyTableViewCell ()
-// 1.这里使用 weak
+// 1.这里使用weak
 @property (weak, nonatomic) UIImageView *iconImageView;
 
 @property (weak, nonatomic) UILabel *titleLabel;
@@ -32,18 +32,15 @@
 //        CGRectGetMaxX(rect);
 //        CGRectGetMidX(rect);
 //        CGRectGetMinX(rect);
-        // 动态 cell
-        // 静态 cell
+        // 动态cell
+        // 静态cell
     }
     return self;
 }
 
-// 该方法调用必须保证在 -(void)config; 方法之后
-// 因为必须有 model 才可以设置坐标
-/**
-  先调用 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath; 方法以后才会接着
- 调用 - (void)layoutSubviews;
- */
+// 该方法调用必须保证在-(void)config;方法之后
+// 因为必须有model才可以设置坐标
+// 先调用 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath; 方法以后才会接着调用 - (void)layoutSubviews;
 - (void)layoutSubviews {
     [super layoutSubviews];
     // 3.这里设置尺寸
@@ -51,8 +48,8 @@
 }
 
 // 赋值方法
-// 此处可以使用该方法，也可以使用 setter 方法
-// 为防止 “循环引用”：有 if 就会有 else
+// 此处可以使用该方法，也可以使用setter方法
+// 为防止“循环引用”：有if就会有else
 -(void)config {
     /**
      不想要显示某个控件
@@ -75,7 +72,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        // 获取 "当前cell" 的大小
+        // 获取"当前cell"的大小
         CGSize size = self.bounds.size;
         NSLog(@"%@", NSStringFromCGSize(size));
     }

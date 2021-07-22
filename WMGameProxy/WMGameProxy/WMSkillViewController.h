@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SyStudyProtocol.h"
+#import "WMStudyProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -28,14 +28,14 @@ NS_ASSUME_NONNULL_BEGIN
 // ！！！"协议protocol"可以直接使用“模版”创建（类似"类别Category"）！！！
 // 协议也可以再遵循协议
 /// 2.协议的作用
-// 1.类型限定 - Student<SyStudyProtocol> *s = [[Student alloc]init];（注意格式）
+// 1.类型限定 - Student<WMStudyProtocol> *s = [[Student alloc]init];（注意格式）
 // 1>.遵循某个协议的不同对象可以放在同一个数组中
 // 2>.遵循某个协议但不实现该协议中的方法的对象调用协议中的方法会报错（需要做判断）
 //if (self.wife respondsToSelector:@selector(study:)) {
 //    [self.wife study:one];
 //}
 // 2.代理delegate
-@protocol WMSkillViewControllerProtocol <NSObject, SyStudyProtocol> // NSObject也是协议、协议也可以再遵循协议
+@protocol WMSkillViewControllerProtocol <NSObject, WMStudyProtocol> // NSObject也是协议、协议也可以再遵循协议
 // 必须实现协议（缺省）
 // Objective-C不实现会报警告⚠️
 // swift中不实现会直接报错

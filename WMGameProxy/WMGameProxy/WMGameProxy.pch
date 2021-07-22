@@ -20,7 +20,7 @@
 // 1).存在一些公有的宏
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 // 2).导入公用的头文件
-#import "FoundationNSObject.h"
+#import "WMFoundationNSObject.h"
 // 3).友情提示：谁记谁SB
 #define WMLOG(...)   NSLog(__VA_ARGS__)
 // 4.原理

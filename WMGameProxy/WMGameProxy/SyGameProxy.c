@@ -97,16 +97,16 @@ int getMax(int m, int n);
 // argc：系统传递进来的参数个数（默认是1）
 // argv[]：系统传递进来的参数实际值（默认程序的名称）
 // 怎么添加参数：WMGameProxy -> EditScheme -> Run -> Arguments
-int main(int argc, const char * argv[]) {
-    // 调用系统函数
-    // '\n'默认换行
-    printf("Hello World!\n");
-    // 调用自定义函数
-    call();
-    int result = getMax(10, 11);
-    printf("%d", result);
-    return 0;
-}
+//int main(int argc, const char * argv[]) {
+//    // 调用系统函数
+//    // '\n'默认换行
+//    printf("Hello World!\n");
+//    // 调用自定义函数
+//    call();
+//    int result = getMax(10, 11);
+//    printf("%d", result);
+//    return 0;
+//}
 
 /**
  C语言的执行流程 - 编写程序->将自定义函数进行编译->目标文件/C语言函数库进行链接->可执行文件->运行

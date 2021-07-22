@@ -849,7 +849,7 @@ dependencies:
 //         //   // // 2.Container - 类似div/UIView
 //         //   // // 属性之间的‘,’不能减少/最后一个属性省略‘,’
 //         //   // child: Container(
-//         //   //   // 子试图
+//         //   //   // 子widget
 //         //   //   child: new Text('hello jsPang', style: TextStyle(fontSize: 40.0)),
 //         //   //   // 文字在容器中的位置
 //         //   //   alignment: Alignment.topLeft,

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ComponentController.h"
+#import "WMComponentController.h"
 #import "MainController.h"
 #import "WMGameProxy.h"
 
@@ -42,7 +42,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = UIColor.whiteColor;
     
-    // 底层调用 [navigationController pushViewController:[[ComponentController alloc]init] animated:true];
+    // 底层调用 [navigationController pushViewController:[[WMComponentController alloc]init] animated:true];
     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:[[MainController alloc]init]];
     /// 当前 UIWindow 的根视图控制器 rootViewController
     // self.window.windowLevel

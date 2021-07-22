@@ -1,5 +1,5 @@
 //
-//  CocoaPodsViewController.h
+//  WMCocoaPodsViewController.h
 //  WMGameProxy
 //
 //  Created by 谢吴军 on 2021/4/22.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface CocoaPodsViewController : UIViewController
+@interface WMCocoaPodsViewController : UIViewController
 
 @end
 

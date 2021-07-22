@@ -1,18 +1,18 @@
 //
-//  CocoaPodsViewController.m
+//  WMCocoaPodsViewController.m
 //  WMGameProxy
 //
 //  Created by 谢吴军 on 2021/4/22.
 //  Copyright © 2021 zali. All rights reserved.
 //
 
-#import "CocoaPodsViewController.h"
+#import "WMCocoaPodsViewController.h"
 
-@interface CocoaPodsViewController ()
+@interface WMCocoaPodsViewController ()
 
 @end
 
-@implementation CocoaPodsViewController
+@implementation WMCocoaPodsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

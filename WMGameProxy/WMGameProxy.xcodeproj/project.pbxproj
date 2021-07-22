@@ -23,14 +23,14 @@
 		33068EF222AE670200D044EE /* WMGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33068EF122AE670200D044EE /* WMGame.swift */; };
 		3309077A242472950029DB9F /* WMRuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33090779242472950029DB9F /* WMRuntimeViewController.m */; };
 		3309A9AB2604906000F1DF3C /* WMGameProxy.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3309A9AA2604906000F1DF3C /* WMGameProxy.txt */; };
-		330C15C922F801F700CD84CA /* SySkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330C15C822F801F700CD84CA /* SySkillViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		330C15C922F801F700CD84CA /* WMSkillViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 330C15C822F801F700CD84CA /* WMSkillViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		331309052420A7DE0014CC7E /* WMPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 331309042420A7DE0014CC7E /* WMPushViewController.m */; };
 		331309072421EB520014CC7E /* 线程状态.png in Resources */ = {isa = PBXBuildFile; fileRef = 331309062421EB510014CC7E /* 线程状态.png */; };
 		3314DE0C260208AF009650CC /* WMGameProxyDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3314DE0B260208AF009650CC /* WMGameProxyDemo.m */; };
 		3324C82024260DD100766248 /* TestFight添加测试人员.png in Resources */ = {isa = PBXBuildFile; fileRef = 3324C81F24260DD100766248 /* TestFight添加测试人员.png */; };
 		3324C8222427B39800766248 /* 从应用A跳转到应用B.png in Resources */ = {isa = PBXBuildFile; fileRef = 3324C8212427B39800766248 /* 从应用A跳转到应用B.png */; };
 		3324D54B22DED4BF0066241F /* WMWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3324D54A22DED4BF0066241F /* WMWebViewController.m */; };
-		332561D02631837C00362E11 /* CocoaPodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332561CF2631837C00362E11 /* CocoaPodsViewController.m */; };
+		332561D02631837C00362E11 /* WMCocoaPodsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 332561CF2631837C00362E11 /* WMCocoaPodsViewController.m */; };
 		33264F10242B4E0400199DBD /* WMRunLoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33264F0F242B4E0400199DBD /* WMRunLoopViewController.m */; };
 		33302F6F242B10ED00C53F13 /* 静态库:动态库常见错误.png in Resources */ = {isa = PBXBuildFile; fileRef = 33302F6E242B10ED00C53F13 /* 静态库:动态库常见错误.png */; };
 		33302F71242B10F200C53F13 /* 静态库:动态库链接方式.png in Resources */ = {isa = PBXBuildFile; fileRef = 33302F70242B10F200C53F13 /* 静态库:动态库链接方式.png */; };
@@ -154,10 +154,10 @@
 		33B10E7A2422964800C6E8C7 /* 新建xxx.a第三步.png in Resources */ = {isa = PBXBuildFile; fileRef = 33B10E762422964700C6E8C7 /* 新建xxx.a第三步.png */; };
 		33B10E7B2422964800C6E8C7 /* 新建xxx.a第五步.png in Resources */ = {isa = PBXBuildFile; fileRef = 33B10E772422964800C6E8C7 /* 新建xxx.a第五步.png */; };
 		33B10E7C2422964800C6E8C7 /* 新建xxx.a第四步.png in Resources */ = {isa = PBXBuildFile; fileRef = 33B10E782422964800C6E8C7 /* 新建xxx.a第四步.png */; };
-		33BE31BF22E5890A0073E35B /* FoundationNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BE31BE22E5890A0073E35B /* FoundationNSObject.m */; };
+		33BE31BF22E5890A0073E35B /* WMFoundationNSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BE31BE22E5890A0073E35B /* WMFoundationNSObject.m */; };
 		33E15543246D5FC000216E08 /* iap的逻辑流程.png in Resources */ = {isa = PBXBuildFile; fileRef = 33E15542246D5FC000216E08 /* iap的逻辑流程.png */; };
 		33E28F102477A35100C0D147 /* ipad开发部署.png in Resources */ = {isa = PBXBuildFile; fileRef = 33E28F0F2477A35100C0D147 /* ipad开发部署.png */; };
-		33ED93E022F12E77006ABD28 /* ComponentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ED93DF22F12E77006ABD28 /* ComponentController.m */; };
+		33ED93E022F12E77006ABD28 /* WMComponentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ED93DF22F12E77006ABD28 /* WMComponentController.m */; };
 		33F1D58C23CC4B7E001AC221 /* WMGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F1D58B23CC4B7E001AC221 /* WMGameView.m */; };
 		33F72D8E242ED4420024A889 /* 图片加载.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F72D8D242ED4420024A889 /* 图片加载.png */; };
 		33F72D90242ED4460024A889 /* Instruments的使用.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F72D8F242ED4460024A889 /* Instruments的使用.png */; };
@@ -211,8 +211,8 @@
 		33090778242472950029DB9F /* WMRuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMRuntimeViewController.h; sourceTree = "<group>"; };
 		33090779242472950029DB9F /* WMRuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMRuntimeViewController.m; sourceTree = "<group>"; };
 		3309A9AA2604906000F1DF3C /* WMGameProxy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = WMGameProxy.txt; sourceTree = "<group>"; };
-		330C15C722F801F700CD84CA /* SySkillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SySkillViewController.h; sourceTree = "<group>"; };
-		330C15C822F801F700CD84CA /* SySkillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SySkillViewController.m; sourceTree = "<group>"; };
+		330C15C722F801F700CD84CA /* WMSkillViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMSkillViewController.h; sourceTree = "<group>"; };
+		330C15C822F801F700CD84CA /* WMSkillViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMSkillViewController.m; sourceTree = "<group>"; };
 		331309032420A7DE0014CC7E /* WMPushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMPushViewController.h; sourceTree = "<group>"; };
 		331309042420A7DE0014CC7E /* WMPushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMPushViewController.m; sourceTree = "<group>"; };
 		331309062421EB510014CC7E /* 线程状态.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "线程状态.png"; sourceTree = "<group>"; };
@@ -222,8 +222,8 @@
 		3324C8212427B39800766248 /* 从应用A跳转到应用B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "从应用A跳转到应用B.png"; sourceTree = "<group>"; };
 		3324D54922DED4BF0066241F /* WMWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMWebViewController.h; sourceTree = "<group>"; };
 		3324D54A22DED4BF0066241F /* WMWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMWebViewController.m; sourceTree = "<group>"; };
-		332561CE2631837C00362E11 /* CocoaPodsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaPodsViewController.h; sourceTree = "<group>"; };
-		332561CF2631837C00362E11 /* CocoaPodsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaPodsViewController.m; sourceTree = "<group>"; };
+		332561CE2631837C00362E11 /* WMCocoaPodsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMCocoaPodsViewController.h; sourceTree = "<group>"; };
+		332561CF2631837C00362E11 /* WMCocoaPodsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMCocoaPodsViewController.m; sourceTree = "<group>"; };
 		33264F0E242B4E0400199DBD /* WMRunLoopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMRunLoopViewController.h; sourceTree = "<group>"; };
 		33264F0F242B4E0400199DBD /* WMRunLoopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMRunLoopViewController.m; sourceTree = "<group>"; };
 		33302F6E242B10ED00C53F13 /* 静态库:动态库常见错误.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "静态库:动态库常见错误.png"; sourceTree = "<group>"; };
@@ -370,19 +370,19 @@
 		33B10E762422964700C6E8C7 /* 新建xxx.a第三步.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "新建xxx.a第三步.png"; sourceTree = "<group>"; };
 		33B10E772422964800C6E8C7 /* 新建xxx.a第五步.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "新建xxx.a第五步.png"; sourceTree = "<group>"; };
 		33B10E782422964800C6E8C7 /* 新建xxx.a第四步.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "新建xxx.a第四步.png"; sourceTree = "<group>"; };
-		33BE31BD22E5890A0073E35B /* FoundationNSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationNSObject.h; sourceTree = "<group>"; };
-		33BE31BE22E5890A0073E35B /* FoundationNSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoundationNSObject.m; sourceTree = "<group>"; };
+		33BE31BD22E5890A0073E35B /* WMFoundationNSObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMFoundationNSObject.h; sourceTree = "<group>"; };
+		33BE31BE22E5890A0073E35B /* WMFoundationNSObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMFoundationNSObject.m; sourceTree = "<group>"; };
 		33E15542246D5FC000216E08 /* iap的逻辑流程.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iap的逻辑流程.png"; sourceTree = "<group>"; };
 		33E28F0F2477A35100C0D147 /* ipad开发部署.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ipad开发部署.png"; sourceTree = "<group>"; };
-		33ED93DE22F12E77006ABD28 /* ComponentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentController.h; sourceTree = "<group>"; };
-		33ED93DF22F12E77006ABD28 /* ComponentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComponentController.m; sourceTree = "<group>"; };
+		33ED93DE22F12E77006ABD28 /* WMComponentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMComponentController.h; sourceTree = "<group>"; };
+		33ED93DF22F12E77006ABD28 /* WMComponentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMComponentController.m; sourceTree = "<group>"; };
 		33F1D58A23CC4B7E001AC221 /* WMGameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMGameView.h; sourceTree = "<group>"; };
 		33F1D58B23CC4B7E001AC221 /* WMGameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMGameView.m; sourceTree = "<group>"; };
 		33F67EDB2304F98D006F7DD6 /* WMGameProxy.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMGameProxy.pch; sourceTree = "<group>"; };
 		33F72D8D242ED4420024A889 /* 图片加载.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "图片加载.png"; sourceTree = "<group>"; };
 		33F72D8F242ED4460024A889 /* Instruments的使用.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Instruments的使用.png"; sourceTree = "<group>"; };
 		33F72D91242ED44A0024A889 /* MRC代码转换ARC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MRC代码转换ARC.png"; sourceTree = "<group>"; };
-		33F874092678877F008B73A6 /* SyStudyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyStudyProtocol.h; sourceTree = "<group>"; };
+		33F874092678877F008B73A6 /* WMStudyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMStudyProtocol.h; sourceTree = "<group>"; };
 		3D3D3EDD51B0F251CBF64154 /* Pods_WMGameProxy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMGameProxy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECEA7B1BF7650220E4B5C11 /* Pods-WMGameProxy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMGameProxy.debug.xcconfig"; path = "Target Support Files/Pods-WMGameProxy/Pods-WMGameProxy.debug.xcconfig"; sourceTree = "<group>"; };
 		407416DA15016E2C557ADCE1 /* Pods_WMGameProxyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMGameProxyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -461,8 +461,8 @@
 				339C0A9D23C6167000C3A144 /* SceneDelegate.m */,
 				33068EEB22AE66CB00D044EE /* WMGameProxy.h */,
 				33068EEC22AE66CB00D044EE /* WMGameProxy.m */,
-				33BE31BD22E5890A0073E35B /* FoundationNSObject.h */,
-				33BE31BE22E5890A0073E35B /* FoundationNSObject.m */,
+				33BE31BD22E5890A0073E35B /* WMFoundationNSObject.h */,
+				33BE31BE22E5890A0073E35B /* WMFoundationNSObject.m */,
 				33646DBE23FFD4A700CE99CF /* WMMemoryManager.h */,
 				33646DBF23FFD4A700CE99CF /* WMMemoryManager.m */,
 				3359FECA241F4A590014C82C /* WMThreadViewController.h */,
@@ -473,8 +473,8 @@
 				33090779242472950029DB9F /* WMRuntimeViewController.m */,
 				33264F0E242B4E0400199DBD /* WMRunLoopViewController.h */,
 				33264F0F242B4E0400199DBD /* WMRunLoopViewController.m */,
-				330C15C722F801F700CD84CA /* SySkillViewController.h */,
-				330C15C822F801F700CD84CA /* SySkillViewController.m */,
+				330C15C722F801F700CD84CA /* WMSkillViewController.h */,
+				330C15C822F801F700CD84CA /* WMSkillViewController.m */,
 				331309032420A7DE0014CC7E /* WMPushViewController.h */,
 				331309042420A7DE0014CC7E /* WMPushViewController.m */,
 				33B10E552422424500C6E8C7 /* WMJumpViewController.h */,
@@ -483,14 +483,16 @@
 				3366E82B2431089D00820298 /* WMSqlViewController.m */,
 				33F1D58A23CC4B7E001AC221 /* WMGameView.h */,
 				33F1D58B23CC4B7E001AC221 /* WMGameView.m */,
-				33ED93DE22F12E77006ABD28 /* ComponentController.h */,
-				33ED93DF22F12E77006ABD28 /* ComponentController.m */,
+				33ED93DE22F12E77006ABD28 /* WMComponentController.h */,
+				33ED93DF22F12E77006ABD28 /* WMComponentController.m */,
 				3324D54922DED4BF0066241F /* WMWebViewController.h */,
 				3324D54A22DED4BF0066241F /* WMWebViewController.m */,
 				33507D962660936900AC455C /* WMSocketViewController.h */,
 				33507D972660936900AC455C /* WMSocketViewController.m */,
-				332561CE2631837C00362E11 /* CocoaPodsViewController.h */,
-				332561CF2631837C00362E11 /* CocoaPodsViewController.m */,
+				332561CE2631837C00362E11 /* WMCocoaPodsViewController.h */,
+				332561CF2631837C00362E11 /* WMCocoaPodsViewController.m */,
+				33068EE822AE66A800D044EE /* MainController.h */,
+				33068EE922AE66A800D044EE /* MainController.m */,
 				33A8FD7822D481B4004AECBA /* SyTableViewController.h */,
 				33A8FD7922D481B4004AECBA /* SyTableViewController.m */,
 				33A8FD7B22D48237004AECBA /* SyCollectionViewController.h */,
@@ -501,11 +503,9 @@
 				3394874523F11C5700A2C525 /* SyCustomCell.m */,
 				337358A02400EECF000507CC /* SyPostItem.h */,
 				337358A12400EECF000507CC /* SyPostItem.m */,
-				33068EE822AE66A800D044EE /* MainController.h */,
-				33068EE922AE66A800D044EE /* MainController.m */,
 				33AD3E36236062830092C389 /* NSString+Extension.h */,
 				33AD3E37236062830092C389 /* NSString+Extension.m */,
-				33F874092678877F008B73A6 /* SyStudyProtocol.h */,
+				33F874092678877F008B73A6 /* WMStudyProtocol.h */,
 				33F67EDB2304F98D006F7DD6 /* WMGameProxy.pch */,
 				33068EEE22AE66EB00D044EE /* WMGameProxy-Bridging-Header.h */,
 				33068EBC22AE665000D044EE /* Main.storyboard */,
@@ -1058,7 +1058,7 @@
 				33068EF022AE66EC00D044EE /* WMController.swift in Sources */,
 				33068EED22AE66CB00D044EE /* WMGameProxy.m in Sources */,
 				33068EC622AE665600D044EE /* main.m in Sources */,
-				330C15C922F801F700CD84CA /* SySkillViewController.m in Sources */,
+				330C15C922F801F700CD84CA /* WMSkillViewController.m in Sources */,
 				33068EF222AE670200D044EE /* WMGame.swift in Sources */,
 				33AD3E38236062830092C389 /* NSString+Extension.m in Sources */,
 				3386EEEB241BBD80001A422F /* SyCustomFlowLayout.m in Sources */,
@@ -1073,7 +1073,7 @@
 				339A3D8022BBBBC9007DD37D /* SyGameProxy.c in Sources */,
 				3324D54B22DED4BF0066241F /* WMWebViewController.m in Sources */,
 				3309077A242472950029DB9F /* WMRuntimeViewController.m in Sources */,
-				33BE31BF22E5890A0073E35B /* FoundationNSObject.m in Sources */,
+				33BE31BF22E5890A0073E35B /* WMFoundationNSObject.m in Sources */,
 				33B10E572422424500C6E8C7 /* WMJumpViewController.m in Sources */,
 				331309052420A7DE0014CC7E /* WMPushViewController.m in Sources */,
 				3366E84124310A2000820298 /* FMDatabase.m in Sources */,
@@ -1084,9 +1084,9 @@
 				33F1D58C23CC4B7E001AC221 /* WMGameView.m in Sources */,
 				33646DC023FFD4A700CE99CF /* WMMemoryManager.m in Sources */,
 				339C0A9F23C6167000C3A144 /* SceneDelegate.m in Sources */,
-				33ED93E022F12E77006ABD28 /* ComponentController.m in Sources */,
+				33ED93E022F12E77006ABD28 /* WMComponentController.m in Sources */,
 				3366E82C2431089D00820298 /* WMSqlViewController.m in Sources */,
-				332561D02631837C00362E11 /* CocoaPodsViewController.m in Sources */,
+				332561D02631837C00362E11 /* WMCocoaPodsViewController.m in Sources */,
 				3366E84324310A2000820298 /* FMResultSet.m in Sources */,
 				3366E83F24310A2000820298 /* FMDatabaseQueue.m in Sources */,
 				3366E84024310A2000820298 /* FMDatabaseAdditions.m in Sources */,
