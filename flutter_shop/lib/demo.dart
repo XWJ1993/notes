@@ -3,7 +3,7 @@
 // dart语言简介
 // 1>.dart语言是一个由Google开发的通用编程语言。后来被Ecma（Ecma-408）批准为标准。用于构建web/服务器/桌面/移动应用
 // 2>.dart语言是一种面向对象的，类定义的，垃圾回收语言。使用C样式语法可以随意地转换成js
-// 3>.dart语言支持接口/mixin/抽象类/具体化泛型/静态类型
+// 3>.dart语言支持接口/mixins/抽象类/具体化泛型/静态类型
 
 // dart语言特性
 // 1>.dart语言中一切（无论变量、数字、函数、null）皆对象，所有对象都是Object类的子类
@@ -573,7 +573,7 @@ Future<String> getData() async {
     // value == Future<String>
   }).whenComplete(() {
     // 异步任务处理完成
-  }).catchError(() {
+  }).catchError((obj) {
     // 出现异常
   });
   return msg;

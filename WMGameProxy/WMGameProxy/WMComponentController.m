@@ -270,13 +270,14 @@
 // UIPageControl
 // ！！！需求：将常见UI控件分类（按照父类）！！！
 -(void)setupButton {
-//    // 尽量使用快速定义方法、如果没有快速定义方法、再考虑init
+//    // 尽量使用快速定义方法、如果没有快速定义方法，再考虑init
 //    UIButton *btn = [[UIButton alloc]init];
 //    btn.buttonType = UIButtonTypeCustom; // 报错
     /// 工厂方法
     // 既可以显示文字也可以显示图片
     // 可以随时调整内部图片/文字的位置
     // 通过重写UIButton（设置buttonType只能在初始化的时候设置）
+    // 在开发中一般使用UIButtonTypeCustom（不使用UIButtonTypeSystem）
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(100, 100, 100, 50);
     [self.view addSubview:btn];

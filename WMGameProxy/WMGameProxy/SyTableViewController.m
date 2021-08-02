@@ -65,7 +65,7 @@
     tableView.tableHeaderView = view;
     tableView.tableFooterView = view;
     /// 设置分割线
-    // 分割线可以用 UIView 代替
+    // 分割线可以用UIView代替
     // 颜色
     tableView.separatorColor = UIColor.redColor;
     // 样式
@@ -86,7 +86,7 @@
     // 设置索引背景颜色
     tableView.sectionIndexBackgroundColor = UIColor.grayColor;
     // 强制更新
-    // 根据 “约束” 立即自动计算控件的宽度和高度
+    // 根据“约束”立即自动计算控件的宽度和高度
     [tableView layoutIfNeeded];
 //    /// 两种模式
 //    // 普通模式
@@ -195,12 +195,12 @@
 ///// 4.很少使用
 //// 一般通过自定义控件实现
 //- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-//    /// 设置区头 title
+//    /// 设置区头title
 //    return @"好男人";
 //}
 //
 //- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
-//    /// 设置区尾 title
+//    /// 设置区尾title
 //    return @"好男人";
 //}
 

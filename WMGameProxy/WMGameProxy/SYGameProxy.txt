@@ -726,8 +726,7 @@ int main(int argc, const char * argv[]) {
 8 因为有复用机制，所以当设置观察者之前，需要将之前的观察者删除掉
 9 ViewController和DetailViewController不应该传输数据，所以，当前被选中的PostInfo，需要放到Model当中([PostList sharedInstance].selectedPost)，设置好之后，再进入下一级页面
 
-1.项目的技术要点/功能模块实现/项目中的难点有哪些，怎么解决的/项目中有哪些你不满意的地方/如果现在让你做，
-你可以怎么做？/做过最得意的是什么项目?
+1.项目的技术要点/功能模块实现/项目中的难点有哪些，怎么解决的/项目中有哪些你不满意的地方/如果现在让你做，你可以怎么做？/做过最得意的是什么项目?
 3.你通常用什么数据格式与服务端交互：json/xml|json、xml解析方式的底层是如何处理的？
 21.iOS开发中常见的异常有哪些？
 22.什么时候使用栈/队列？什么时候使用链表/数组？
@@ -936,8 +935,6 @@ cell内部如果某一个控件不需要我们可以更新布局为0
 
 //项目中：如果Model中需要新的数据：可以直接在Model中创建->然后拿出来使用
 如果某个ui需要改变：可以在内部改变->vc中可以调用方法告诉view你的view显示需要改变
-
-在开发中，我们一般UIButton会使用custom、而不使用system
 
 看控制器会不会走 deinit方法，有内存泄漏 deinit这个方法是不会走的
 
@@ -1154,7 +1151,7 @@ dispatch_semaphore_signal
 //@property (copy, nonatomic) NSString *name;
 
 7.数据保存怎么实现
-9.app的优化,你用什么工具去优化一个qpp,例如,例如一个页面,万一崩了,你用什么工具去查内存之类的状态
+9.app的优化,你用什么工具去优化一个app,例如,例如一个页面,万一崩了,你用什么工具去查内存之类的状态
 10.你项目遇到的问题,怎么解决的
 11.你用过的认为好的app,为什么
 12.其他的一些基础的知识
@@ -1436,23 +1433,9 @@ iphone 的标准推荐CFNetwork C库编程.但是编程比较烦躁。在其它O
 
 16、 cell行数太多，如何滑动流畅
 
-26.什么是push(了解一下）。
-客户端程序留下后门端口，客户端总是监听针对这个后门的请求，于是 服务器可以主动像这个端口推送消息。
-28.fmmpeg框架(了解一下）
-（音视频编解码框架，内部使用UDP协议针对流媒体开发，内部开辟了六个端口来接受流媒体数据，完成快速接受之目的）.
-29.fmdb框架(了解一下)
-（数据库框架，对sqllite的数据操作进行了封装，使用着可把精力都放在sql语句上面）。
-30.320框架（了解一下）
-（ui框架，导入320工程作为框架包如同添加一个普通框架一样）。cover(open)   flower框架 (2d 仿射技术)，内部核心类是CATransform3D.
+7.网络你如何下载图片
 
-3.     你如何理解代理/委托
-    委托代理（delegate），顾名思义，把某个对象要做的事情委托给别的对象去做，那么别的对象就是这个对象的代理，代替它来打理要做的事。
-    在cocoa框架中的Delegate模式中，委托人往往是框架中的对象（视图中的控件、表视图神马的），代理人往往是视图控制器对象。
-
-7.     网络你如何下载图片
-
-18、tableview滑动时图片加载缓慢解决办法
-    使图片异步加载
+18、tableview滑动时图片加载缓慢解决办法（图片异步加载）
     在
     -(UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath函数中加载图片的时候使用
     [cell.imageView setImageWithURL:[NSURL URLWithString:url] placeholderImage:nil ];
@@ -1468,10 +1451,8 @@ NSLog(@”%@”, string);
 10.请扩展NSString类，增加一个isEmpty方法，要求字符串有内容是返回YES无内容时返回NO
 
 程序运行的时候内存分几个区？各区的用途？
-C中分配内存的方式有哪些？
 Kvo/kvc的机制？
 阐述以下推送功能的原理机制？
-Object-c中用什么修饰私有变量？
 Object-c中创建一个工程需要用到那两个框架？
 写一个委托Delegate的interface
 
@@ -1632,17 +1613,6 @@ UIScrollView的contentSize能否在viewDidLoad中设置？
     * 因为任何控制器的view在viewDidLoad的时候的尺寸都是不准确的，如果有子控件的尺寸依赖父控件的尺寸，在这个方法中设置会导致子控件的frame不准确，所以这时应该在下面的方法中设置子控件的尺寸
 -(void)viewDidLayoutSubviews;
 
-如何实现类似QQ的三角形头像
-* Quartz2D
-* 使用coreGraphics裁剪出一个三角形
-核心动画里包含什么？
-* 基本动画
-* 回头自己总结吧
-如何使用核心动画？
-* 创建
-* 设置相关属性
-* 添加到CALayer上，会自动执行动画
-
 14. UITableViewCell怎样使用更流畅？
 首先cell的复用机制节约了系统资源；其次应当注意有些复杂的大数据或网络数据应采用异步加载的方式进行加载，以免cell刷出时发生卡顿。
 
@@ -1672,8 +1642,6 @@ CGSize size = [text sizeWithFont:font constrainedToSize:CGSizeMake(140, 1000) li
 首先应用程序把要发送的消息、目的iPhone的标识打包，发给苹果服务器，苹果服务器在自身的已注册Push服务的iPhone列表中，查找有相应标识的iPhone，并把消息发送到iPhone，最后，iPhone把发来的消息传递给相应的应用程序，并且按照设定弹出Push通知。
 
 加分题:
-
-
 2. Protocol 与 performSelector: 的相同与区别，哪个更好（基础参数类型传递）
 二者都可以调用相关方法，可进行函数回调。
 Protocol是用来定义对象的属性，行为和用于回调的。必须遵守其协议方可使用其方法。
@@ -1698,11 +1666,8 @@ kvo:键值观察机制，他提供了观察某一属性变化的方法，极大�
 因此控制链（has-a从英语单词大致可以看出，单一拥有和可控制的对应关系。
 
 30.timer 的间隔周期准吗?为什么?怎样实现一个精准的
-notification 是全进程空间的通知吗? kvo 呢?
-timer?
-库中找到类似的吗?
-32 如果要开发一个类似 eclipse 的软件，支持插件结构。且开放给第三方开发。你会怎样去设计它?(大概思路)
-这篇文章先记录一下题目，下一篇开始从第一题解答 .
+notification是全进程空间的通知吗? kvo 呢?
+
 下面从第一题开始解答 :
 题目 :1.Object -c 的类可以多重继承么?可以实现多个接口么? Category
 类好?为什么? 关于多继承 :
@@ -1913,23 +1878,6 @@ category 可以在不获悉，不改变原来代码的情况下往里面添加�
 category 和 extensions 的不同在于后者可以添加属性。另外后者添加的方法是必须要实 现的。
 extensions 可以认为是一个私有的 Category 。 29.CAlayer 介绍
 
- 31.app 性能测试方式
-通过 Xcode 提供的工具如 Instrument ，测试 CPU ，Mermory 性能。也可以适用一些开源
-的自动化测试工具:如 Frank ，KIF 等。
-32.NSArray 可以放基本数据类型不( int ， float ， nil )怎么放进一个结构体 NSArray 只能存放 objective -c 对象数据模型，这些基本数据类型需要先转化为
-NSNumber 对象再存放进数组中。
-33.objective-c 和 c，c++混合编写
-在 Objective-C++ 中，可以用 C++ 代码调用方法也可以从 Objective-C
-调用方法。在这两 Objective-C 对象
-Xcode 需要源
-种语言里对象都是指针，可以在任何地方使用。例 的指针作为数据成员， Objective-C 类也可以有 文件以 ".mm" 为扩展名，这样才能启动编译器的
-如， C++ 类可以使用 C++ 对象指针做实例变量。
-Objective-C++ 扩展。
-
-23. 使用自动释放池( Use AutoRelease Pool )
-24. 缓存图像( Cache Images-Or not )
-25. 尽可能避免日期格式化器
-
 1. 回答person的retainCount值,并解释为什么 Person * per = [[Person alloc] init]; 此时 person
 的 retainCount的值是 1 self.person = per; 在 self.person 时,如果是assign,person的 retainCount
 的值不变 ,仍为 1 若是 :retain person的 retainCount的 值加 1,变为 2 若是 :copy person的 retainCount值不 变,仍为1
@@ -2107,11 +2055,6 @@ b = temp;
 五十、 Swift 和 OC的区别?
 1、Swift 没有地址和指针的概念
 2、Swift 对数据类型要求极为严谨 3、泛型，泛型代码能写出更加灵活清晰、可重复使用的函数
-五十一、如何实现 OC 和 Javascript 交互?
-1、ios 应用一般通过 UIWebView 实现 OC与 Javascript 的交互，具体如下 2、OC 调用 JS:在 UIWebView 的代理方法 webViewDidFinishLoad 中利用 WebView 唯一与 JS交互的方法
-- (NSString *)stringByEvaluatingJavaScriptFromString:(NSString *)script; 3、JS调用 OC:利用 html 的重定向技术，使用下面方法截取重定向
--(BOOL)webView:(UIWebView *)webView
-shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 五十二、 HTTP 和 Socket 通信之间的区别?
 1、A > HTTP(超文本传输协议 )是建立在 TCP协议上的应用，简单、规模 小、通信速度快，用于定义网络数据传输的格式
 B >最显著特点是客户端每次请求都需要服务器的响应，响应完成会主动 释放连接，节约传输时间
@@ -2164,11 +2107,6 @@ block 内部代码生成对应函数
 1、类方法: A:类方法是属于类对象的 B;类方法只能通过类对象调用 C:类方法中的 self 是类对象 D:类方法可以调用其他的类方法 E:类方法不能直接访问成员变量 F:类方法中不能直接调用对象方法
 2、对象方法:
 A:对象方法属于实例对象 B;对象方法只能通过实例对象调用 C:对象方法中的 self 是实例对象 D:对象方法中可以访问成员变量 E:对象方法中可直接调用其他对象方法 F:对象方法中也可以调用类方法 ( 通过类 )
-七十三、 OC中有哪几种遍历的方法?哪个效率比较高? 1、普通 for 循环
-2、for 循环增强 for-in
-3、block 代码块 enumrateObjectsUsingBlock
-4、枚举器: NSEnumerator
-效率: for -in 效率最高 2s 左右，其余都在 2.6~3.0s 之间
 七十四、 runtime 如何实现将 weak 修饰的对象自动设置为 nil ? 1、runtime 对注册的类，会进行布局， 对于 weak 对象会放入一个
 用 weak 指向的对象内存地址作为 key ，当此对象的引用计数为
 dealloc，假如 weak 指向的对象内存地址是 a，那么就会以 a 为键，在这个 weak
