@@ -38,7 +38,7 @@
     /**
      2.应用间跳转 - 从 "应用A -> 应用B"
      1>.先在 “应用B” 设置 “scheme协议”（注意不要加上"://"）
-     2>.iOS9.0以后 - 再在 “应用A” 上添加白名单/ info.plist -> LSApplicationQueriesSchemes（注意不要加上"://"）
+     2>.iOS9.0以后 - 再在“应用A”上添加白名单/ info.plist -> LSApplicationQueriesSchemes（注意不要加上"://"）
      3>.写代码实现跳转
      */
     NSURL *schemeUrl = [NSURL URLWithString:@"scheme协议://"];

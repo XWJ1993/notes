@@ -25,8 +25,9 @@
 // 程序进入前台 3 - 4
 // 程序杀死 1 - 2 - 5
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // 应用程序启动完毕
     /// 0.需要主动的请求授权才可以发送本地通知
-    // 该方法一般放在 AppDelegate.h 中 - 表示程序一启动就主动请求授权
+    // 该方法一般放在AppDelegate.h中 - 表示程序一启动就主动请求授权
     if (@available(iOS 8.0, *)) {
         UIUserNotificationSettings *set = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert | UIUserNotificationTypeBadge | UIUserNotificationTypeSound categories:nil];
         [[UIApplication sharedApplication] registerUserNotificationSettings:set];

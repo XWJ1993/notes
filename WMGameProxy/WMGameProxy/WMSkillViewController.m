@@ -710,37 +710,39 @@
 // 2.iOS程序启动以后创建的第一个对象就是UIApplication对象
 // https://www.cnblogs.com/wendingding/p/3766347.html
 - (void)showApplication {
-    // 单例
-    // 不可以手动创建
+    // 每个应用程序都有自己的UIApplication对象（单例）
+    // 获取UIApplication对象
     UIApplication *app = [UIApplication sharedApplication];
-    // 设置 “App图标” 右上角的红色提醒数字
+//    // 不可以手动创建
+//    UIApplication *app_01 = [[UIApplication alloc]init]; // 报错（？？？怎么模拟该写法？？？）
+    // 1>.设置“App图标”右上角的红色提醒数字
     // 之前必须注册用户通知
-    // 会弹出 “是否允许通知” 弹窗
+    // 会弹出“是否允许通知”弹窗
     UIUserNotificationSettings *notice = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge categories:nil];
     [app registerUserNotificationSettings:notice];
     app.applicationIconBadgeNumber = 400;
-    // 设置联网指示器的可见性
+    // 2>.设置联网指示器的可见性
     // 状态栏会出现一个"菊花"
     app.networkActivityIndicatorVisible = YES;
-    // 屏幕常亮不变暗
+    // 3>.屏幕常亮不变暗
     app.idleTimerDisabled = YES;
-    // 设置状态栏
+    // 4>.设置状态栏
     // iOS7.0以后系统提供2种管理状态栏的方法
-    // 1.通过 UIViewController 管理：每个 UIViewController 可以拥有自己不同的状态栏
-    // 2.通过 UIApplication 管理：一个App的状态栏统一管理
-    // 默认通过 “方法1” 管理状态栏
-    // 如果使用 “方法2” 需要配置 info.plist 文件
+    // 1.通过UIViewController管理：每个UIViewController可以拥有自己不同的状态栏
+    // 2.通过UIApplication管理：一个App的状态栏统一管理
+    // 默认通过“方法1”管理状态栏
+    // 如果使用“方法2”需要配置info.plist文件
     // 参考 - https://www.jianshu.com/p/52300d0df3e5
     app.statusBarHidden = YES;
     app.statusBarStyle = UIStatusBarStyleLightContent;
-    // 打开其他App
+    // 5>.打开其他App
     [app openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
-    // 打电话
+    // 6>.打电话
     [app openURL:[NSURL URLWithString:@"tel://15601749931"]];
-    // 发短信
+    // 7>.发短信
     [app openURL:[NSURL URLWithString:@"sms://15601749931@163.com"]];
-    // App很容易受到打扰
-    // 来电、锁屏
+    // 8>.App很容易受到外界（来电、锁屏）干扰
+    // 当App受到干扰的时候会产生一些系统事件（AppDelegate）
 }
 // 3.隐藏状态栏
 /// 方法一、通过UIViewController管理状态栏(每个VC都拥有自己不同的状态栏)

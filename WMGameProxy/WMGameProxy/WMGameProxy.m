@@ -356,21 +356,6 @@
      */
 }
 
-/**
- 异常处理
- NSArray *array = [NSArray array];
- @try {
-     // 可能会出现异常的代码
-     [array objectAtIndex:5];
- } @catch (NSException *exception) {
-     // 如果捕捉到错误：执行此处的代码
-     NSLog(@"%@", exception);
- } @finally {
-     // 可选：必执行代码
-     NSLog(@"finally");
- }
- */
-
 /// json解析
 // 实质：将所有的dict都转化成model放到对应NSArray中
 // 把dict传入model

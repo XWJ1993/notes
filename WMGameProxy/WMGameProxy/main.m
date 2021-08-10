@@ -25,9 +25,9 @@ int main(int argc, char * argv[]) {
     /// 第一种方式
     @autoreleasepool {   // NSAutoreleasePool *pool = [[NSAutoreleasePool alloc]init];
         /**
-         // NSStringFromClass([AppDelegate class]将类名转换成NSString
-         // 第三个参数：设置 App 对象的名称（如果是nil/默认是UIApplication）
-         // 第四个参数：设置 App 的 delegate 名称
+         NSStringFromClass([AppDelegate class]) - 将类名转换成NSString
+         第三个参数：设置App对象的名称（如果是nil/默认是UIApplication）
+         第四个参数：设置App的delegate名称
          */
         // 这里开启了一个RunLoop/默认不会返回
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
