@@ -1406,7 +1406,7 @@
 
 #pragma mark - UIViewControllView
 // UITabBarController/UINavigationController/UITableViewController
-// 先执行 “init()方法” -> 执行 “loadView()方法”
+// 先执行“init()方法” -> 执行“loadView()方法”
 -(void)setupController {
     // 颜色
     self.view.backgroundColor = UIColor.grayColor;
@@ -1674,13 +1674,14 @@ UIWindow -> UITabBarController -> UINavigationController -> ChildViewControllers
     
     // 6>.xib的加载原理
     
+    // 7>.xib和nib有什么区别？
     
     // Segue
     // xxx需要在xib中设置
     [self performSegueWithIdentifier:@"xxx" sender:nil];
     /**
-     1.command + D可以在 xib 中复制控件
-     2.！！！删除 xib 需要删除 “代码部分”和“xib连线” 两处！！！
+     1.command + D可以在xib中复制控件
+     2.！！！删除xib需要删除“代码部分”和“xib连线”两处！！！
      */
 }
 // 准备跳转前调用

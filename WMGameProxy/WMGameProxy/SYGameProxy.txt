@@ -742,7 +742,6 @@ int main(int argc, const char * argv[]) {
 62.为什么category只能为对象添加方法？却不能添加成员变量？
 63.简述NSInteger* a/NSInteger a的区别？
 64.block和gcd的并发执行？
-65.Xib/代码方法创建界面的优缺点？
 66.关于Objective的异常处理？
 70.app一个页面crash、你可以用什么工具去查内存之类的状态；
 关于View的一些高级动画：目前是一点都不会
@@ -784,7 +783,6 @@ Person *person = [Person alloc] init]；
 7.NSOperation什么时候从queue中移除？
 18.怎么提高客户端的性能？（这点需要深入研究一番）
 25.有哪些方法可以启动一个线程？
-26.xib/nib之间的区别？
 28.json解析内部是怎么实现的？
 29.试说明SEL和@selector的用途、有什么作用？
 31.请说明Touch和非Touch事件发生时在系统中的传递过程？（事件传递hitest）
@@ -993,8 +991,6 @@ UIImage.resiezableImage(with: UIImage(named: "calendar_bg_white"), edgeInsets: U
 如果App的跳转比较像（就是model不一样）
 我们可以对model进行赋值
 新建一个model   对model进行赋值
-
-在xib中，command选中两个控件   可以让他们等宽、然后修改比例
 
 数据库问的问题：数据的增删改查、多表的链接查询、数据回滚
 
@@ -2167,18 +2163,6 @@ C:最终发送网络请求去网络加载 D:将服务器返回的网络数据进
 一、 iOS7之前，后台执行内容有几种形式，都是什么?
 1、一般的应用在进入后台的时候可以获取一定的时间来运行相关任务，也就是 说可以在后台运行一小段时间 (10s 左右 )
 2、后台播放音乐、后台 GPS跟踪、后台 voip 支持
-二、简单说明 App 的启动过程?
-1、第一种情况:有 storyboard
-A:程序入口 main 函数
-B: UIApplicationMain ;创建 UIApplication 对象，创建 UIApplication 的
-delegate 对象
-C:根据 info.plist 加载 Main storyboard file base name 所执行的 storyboard D:创建 UIWindow ，创建和设置 UIWindow 的根控制器 rootViewController ，显示窗口
-2、第二种情况:没有 storyboard
-A:程序入口 main 函数
-B: UIApplicationMain ;创建 UIApplication 对象，创建 UIApplication 的
-delegate 对象
-C:delegate 对象开始监听系统事件，程序启动完毕时调用代理的
-application:didFinishLaunchingWithOptions: 方法，在该方法中创建窗口，设置 根控制器，显示窗口
 三、有些图片加载的比较慢如何处理?
 1、图片下载要放下异步线程执行 2、图片下载过程中使用占位图片 3、如果图片较大，可以考虑使用断点下载
 四、 你实现过一个框架或者库以供别人使用么?如果有， 或者库时候的经验;如果没有，请设想和设计框架的 public 的 API，并指出大概 需要如何做、需要注意一些什么方面，来使别人容易地使用你的框架?
@@ -2859,11 +2843,6 @@ areAnimationsEnabled 方法
 UI 对象依然是起作用的。仅仅
 _myNav.navigationBar.translucent = YES; _myNav.navigationBar.barStyle = UIBarStyleBlack;
 
-6.pch 文件的作用
-.pch 表示 "precompiled header", 这是一个你工程要用到的来自于外部框架的 头文件列表。 xcode 将编译这些头到文件，这将减少你在选择 Build 或 Build and Go 时编译项目的时间。通常用到的头文件已经自动包含了 pch，系统编译 每个 cpp 文件前，都会先 include 这个文件。这样就节省了添加 include 的时 间，相当于加速编译
-还有就是可以再这里面放入宏，在整个工程中都可以用
-7. 怎样解决重复编译 #ifndef _DEBUG #ifdef USE_MYLIB ................
-#endif
 8. awakeFromNib 与 viewDidLoad 区别 awakeFromNib
 当.nib 文件被加载的时候，会发送一个 每个对象，每个对象都可以定义自己的
 awakeFromNib的消息到 .nib 文件中的 awakeFromNib 函数来响应这个消息，
@@ -3040,12 +3019,6 @@ ClientSocket ，另
 就响应客户
 
 // json和xml
-
-3 info.plist 和 Prefix.pch 的用处 info.plist
-项目的配置属性
-Prefix.pch
-1.存放一些全局的宏 (整个项目中都用得上的宏 )
-
 2. 用来包含一些全部的头文件 (整个项目中都用得上的头文件 ) 3.能自动打开或者关闭日志输出功能
 4iOS中是否有多继承?怎么实现多态? 没有
 分类和协议
@@ -5889,14 +5862,6 @@ NSFileHandle *readWriteHandle = [NSFileHandle fileHandleForUpdatingAtPath:path]
  各种临时文件 , 保存应用再次启动时不需要的文件 将其删除 ,因为该目录下的东西随时有可能被系统清除
  统磁盘存储空间不足的时候
  .而且 ,当应用不在需要这些文件时应主动 ,目前已知的一种可能清理的原因是系
- 二十 . plist 和 pct 文件的好处 ?
- plist 文件以便用来储存数组或者字典 ,它是 iOS 中特有的存储方式 .它可以将数据与代码隔离开 , 更便于数据的管理和展示 .
- pch 里面可以保存一些全局的宏和头文件 .
- pct 是预编译头文件 , 其中存放有工程中已有编译的部分代码 编译这些代码 .
- pct 头文件的内容能被项目中的其他所有源文件共享访问 存放一些全局的宏 (整个项目都用得上的宏 )
- 用来包含一些全部的头文件 (整个项目都用得上的头文件 能自动打开或者关闭日志的输出功能
- pct 弊端 : 每个文件都会导入 ,有效率问题 .
- ; 在以后建立工程时就不用重新)
 
  94. 什么是沙盒模型?哪些操作是属于私有 api 范畴 ?
   答:某个 iphone 工程进行文件操作有此工程对应的指定的位置，不能逾越。

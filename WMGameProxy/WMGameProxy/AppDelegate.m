@@ -43,7 +43,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = UIColor.whiteColor;
     
-    // 底层调用 [navigationController pushViewController:[[WMComponentController alloc]init] animated:true];
+    // 底层调用“[navigationController pushViewController:[[WMComponentController alloc]init] animated:true];”
     UINavigationController *navigationController = [[UINavigationController alloc]initWithRootViewController:[[MainController alloc]init]];
     /// 当前 UIWindow 的根视图控制器 rootViewController
     // self.window.windowLevel
@@ -57,9 +57,16 @@
 //    self.window.rootViewController = [sb instantiateViewControllerWithIdentifier:@"main"];
 //    // ？？？通过Segue实现页面的跳转？？？
     
+//    /// 通过xib加载程序
+//    // 底层自动调用“initWithNibName”
+//    // 1>.如果指定特定名称的xib则会加载指定的xib
+//    // 2>.如果没有相同名称的xib则会加载名称相近的xib(名称去掉controller)
+//    XibViewController *vc = [[XibViewController alloc]init];
+    
     /// 显示 UIWindow
-    // 1.将当前 self.window 设置成当前App主窗口：这样在别的控制器就可以通过 [UIApplication sharedApplication].keyWindow 取到
-    // 2.将 rootViewController 添加到当前App主窗口
+    // 1.让当前self.window设置成当前App主窗口：这样在别的控制器就可以通过“[UIApplication sharedApplication].keyWindow”取到
+    // 2.让窗口显示（self.window.hidden = NO;）
+    // 2.让"rootViewController的view"添加到当前App主窗口（self.window）
     [self.window makeKeyAndVisible];
     
 //    // WMGameProxy借用地盘

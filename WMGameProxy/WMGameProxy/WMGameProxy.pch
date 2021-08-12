@@ -10,20 +10,20 @@
 #define WMGameProxy_pch
 // 条件编译
 #ifdef __OBJC__
-//// 关于 xxx.pch（xxx表示工程名称）
-/// 1.默认创建App的时候不再默认创建 xxx.pch
-/// 2.怎么手动创建 xxx.pch
-// 右键 -> New File... -> iOS -> Other -> xxx.pch
-/// 3.配置
-// 1.删除全部默认代码；2.Build Settings -> Precompile Prefix Header -> YES；3.Build Settings -> Prefix Header
-/// 3.作用
-// 1).存在一些公有的宏
+// 关于xxx.pch（xxx表示工程名称）
+// 1.默认创建App的时候不再默认创建xxx.pch
+// 2.怎么手动创建xxx.pch（右键 -> New File... -> iOS -> Other -> xxx.pch）
+// 3.配置
+// 1>.删除全部默认代码；
+// 2>.Build Settings -> Precompile Prefix Header -> YES；
+// 3>.Build Settings -> Prefix Header
+// 4.作用
+// 1>.存在一些公有的宏
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
-// 2).导入公用的头文件
+// 2>.导入公用的头文件
 #import "WMFoundationNSObject.h"
-// 3).友情提示：谁记谁SB
+// 3>.友情提示：谁记谁SB
 #define WMLOG(...)   NSLog(__VA_ARGS__)
 // 4.原理
-// 工程在编译阶段把 xxx.pch 文件中的所有内容导入到工程当中所有的文件中
-
+// 工程在编译阶段把xxx.pch文件中的所有内容导入到工程当中所有的文件中
 #endif

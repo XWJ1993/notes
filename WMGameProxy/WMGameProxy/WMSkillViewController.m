@@ -52,22 +52,22 @@
 - (void)loadView {
     // 保留父类方法
     // 一般都需要调用
-    // “自定义self.view” 不用调用该方法
+    // “自定义self.view”不用调用该方法
     [super loadView];
-    // 0.初始化控制器的 self.view/创建self.view
-    // 当 self.view 第一次使用的时候调用
+    // 0.初始化控制器的self.view/创建self.view
+    // 当self.view第一次使用的时候调用
     // self.view是lazy
-    // ！！！ self.view还没有加载完成 ！！！
+    // ！！！self.view还没有加载完成 ！！！
     /*
      底层原理：
      先判断当前VC是不是从storyboard中加载的？？？
-     1.如果是：把storyboard中的view设置为self.view
-     2.如果不是：创建一个空白的View
+     1.如果当前VC是从storyboard中加载的：把storyboard中的view设置为self.view
+     2.如果当前VC不是从storyboard中加载的：创建一个空白的View
      */
-    // 系统调用：当控制器 View 第一次使用的时候调用该方法
-    // 一旦重写该方法：需要自定义View
+    // 系统调用：当控制器view第一次使用的时候调用该方法
+    // 一旦重写该方法：需要自定义view
     self.view = [[UIView alloc]init];
-    // 通过该方法设置 alpha = 0 不能响应事件
+    // 通过该方法设置alpha = 0不能响应事件
     self.view.alpha = 0;
     // 如果需要透明控件响应事件：颜色透明/可以处理事件
     self.view.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0];
@@ -758,7 +758,7 @@
 }
 /**
  方法二、通过UIApplication管理状态栏(app状态栏统一管理)
- 不让VC管理状态栏 - 修改 info.plist（View controller-based status bar appearance，设置为NO）
+ 不让VC管理状态栏 - 修改info.plist（View controller-based status bar appearance，设置为NO）
  [UIApplication sharedApplication].statusBarHidden = YES;
  [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
  */
